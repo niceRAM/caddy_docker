@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  caddy:
+    container_name: caddy
+    build:
+      context: ./caddy_docker
+      args:
+        network: host
+        # HTTPS_PROXY: 
+        # NO_PROXY: localhost,127.0.0.1
+    restart: always
+    network_mode: "host"
+    # environment:
+    #   CLOUDFLARE_EMAIL: 
+    #   CLOUDFLARE_API_KEY: 
+    volumes:
+      - ./Caddyfile:/caddy/Caddyfile
+      - ./certs:/caddy/certs
+      - ./.caddy:/root/.caddy
+      - ./www:/www/:rw
