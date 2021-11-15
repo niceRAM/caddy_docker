@@ -13,7 +13,7 @@ caddy v1.0.5
 
 ## 默认插件
 
-```dnspod```, ```filter```, ```cache```, ```minify```, ```expires```, ```realip```, ```cors```
+`tls.dns.cloudflare`, `http.forwardproxy`, `http.ipfilter`, `filter`, `cache`, `minify`, `expires`, `realip`
 
 ## 加入更多插件
 

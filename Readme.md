@@ -14,7 +14,7 @@ caddy v1.0.5
 
 ## default plugins
 
-```dnspod```, ```filter```, ```cache```, ```minify```, ```expires```, ```realip```, ```cors```
+`tls.dns.cloudflare`, `http.forwardproxy`, `http.ipfilter`, `filter`, `cache`, `minify`, `expires`, `realip`
 
 ## how to add more plugins
 
